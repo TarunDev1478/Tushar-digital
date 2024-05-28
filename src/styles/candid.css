@@ -1,0 +1,134 @@
+.main1{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+}
+
+.candid {
+    margin-top: 100px;
+    width: 90vw;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.if{
+    border-bottom:5px solid #5e5350;
+    margin-bottom: 35px;
+    margin-left:10px;
+}
+.if h1{
+    font-size: 4rem;
+    color: #69605d;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+#open h1{
+    font-size: 4rem;
+  position: fixed;
+  top: 90px;
+  left: 218px;
+  font-weight: 500;
+  color: #69605d;
+}
+.display {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.column img {
+    width: 450px;
+    margin: 6px 0px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.column img:hover{
+    opacity: 0.8;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#open {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    width: 1136px;
+    height: 85vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#img-dis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 710px;
+    height: 80vh;
+    left: 220px;
+    margin-top:85px;
+}
+#img-dis img{
+    width: 725px;
+  height: 483.333px;
+  border-top: 5px solid #69605d;
+  border-bottom: 5px solid #69605d;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 60px;
+}
+#fully i {
+    position: absolute;
+    top: 103px;
+    left: 1367px;
+    font-size: 1.7rem;
+    color: white;
+}
+
+#fully {
+    position: fixed;
+    display: none;
+    top: 2px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 12;
+}
+
+#open .next {
+    position: relative;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 0px;
+    top: 6px;
+    border-radius: 20px;
+    box-shadow: 11px 6px 42px 27px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+#open .next:hover{
+    scale:1.05
+}
+#next-n {
+    display: flex;
+  width: 371px;
+  flex-direction: column;
+  position: absolute;
+  top: 28px;
+  left: 760px;
+  justify-content: center;
+  align-items: center;
+}

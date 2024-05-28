@@ -1,0 +1,91 @@
+.detail3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    
+    height: 120vh;
+    width: 100vw;
+    background:url("../../public/images/jk.jpg")center center no-repeat;
+    background-position: 0% 75%;
+    background-size: cover;
+    opacity: 0.75;
+    color:white;
+    overflow: hidden;
+}
+.heading{
+    position: relative;
+    top:39%;
+    left:10%;
+    height:600px;
+    width:800px;
+    font-size: 3.2rem;
+}
+
+.detail3 .talk2{
+    position: relative;
+    top:40%;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    width:600px;
+}
+
+#View2{
+    margin:70px 0px 0px 0px;
+    width:250px;
+    height:70px;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    color:white;
+    border:none;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+#View2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+#View2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+#View2:hover{
+    color:black;
+}
+#View2::before{
+    opacity:0.3;
+}
+#View2::after{
+    transition-delay: 0.3s;
+}
+#View2:hover::before {
+    top:0;
+}
+#View2:hover::after{
+    top:0;
+}
+.b{
+    height: 120vh;
+    width: 100vw;
+    background-color: #7a726f;
+    margin:240px 0px;
+}

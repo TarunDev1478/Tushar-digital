@@ -1,0 +1,103 @@
+#main-slider{
+    margin-top: 240px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:120vh;
+    background-position: 50% 50%;
+    display: flex;
+    transition: 0.5s;
+    background-size:cover;
+}
+#main-slider .back{
+    position: relative;
+    height: 120vh;
+    width:100vw;
+    background-color: rgb(0, 0, 0,0.2);
+    filter: blur(100px);
+}
+.slider{
+    position: absolute;
+    height:95vh;
+    width:80vw;
+    border-radius: 20px;
+    box-shadow: 9px 7px 30px 33px rgb(0,0,0,0.5);
+    box-shadow: currentColor;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:94vw;
+    height:87vh;
+    padding:50px;
+    background-color: #fff;
+    box-shadow: 0 30px 50px #dbdbdb;
+    background-color: transparent;
+
+}
+#slide{
+    width:900;
+    margin-top:50px;
+}
+.item{
+    width:200px;
+    height:300px;
+    background-position: 50% 50%;
+    display: flex;
+    transition: 0.5s;
+    background-size:cover;
+    position: absolute;
+    z-index: 1;
+    top:75%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:  0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width:100%;
+    height:100%;
+    box-shadow: none;
+}
+.item:nth-child(3){
+    left:60%;
+    z-index: 22;
+}
+.item:nth-child(4){
+    left:calc(60% + 220px);
+    z-index: 21;
+}
+.item:nth-child(5){
+    left:calc(60% + 440px);
+    z-index: 20;
+}
+.item:nth-child(n+6){
+    left:calc(50% + 660px);
+    opacity: 0;
+    z-index: 19;
+}
+.buttons{
+    position: absolute;
+    bottom:30px;
+    z-index: 222222;
+    text-align: center;
+    width:100%;
+}
+.buttons button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #555;
+    transition: 0.5s;
+}.buttons button:hover{
+    background-color: #bac383;
+}

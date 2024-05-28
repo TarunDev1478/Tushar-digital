@@ -1,0 +1,134 @@
+.detail1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    width:100vw;
+    height:200vh;
+    background-color: black;
+}
+.detail1 .talk{
+    display:flex;
+    height:fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding:170px 0px 0px 0px;
+    color:white;
+}
+.video-extra{
+    height:600px;
+    background-color: #7a726f;
+    margin:150px 0px 120px 100px;
+    overflow: hidden;
+}
+.detail1 .service .demo-video{
+    height:600px;
+    overflow: hidden;
+}
+.service video{
+    position: relative;
+  top: -479px;
+  width: 791px;
+  height: 330px;
+}
+.service img{
+    height: 600px;
+    position: relative;
+  z-index: 1;
+}
+.detail1 .service {
+    display: flex;
+    width:100vw;
+}
+.detail1 .service .service-detail {
+    margin-top: 105px;
+    margin-left: 150px;
+}
+.capture{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 150;
+}
+.wedding{
+    font-size: 2.5rem;
+    color:white;
+    font-weight: 550;
+    padding:15px 0px;
+}
+.commit{
+    color:white;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+.d1{
+    font-size: 1.7rem;
+    font-weight: 150;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#view-wedding{
+    z-index: 1;
+    margin:70px 0px 200px 0px;
+    width:250px;
+    height:70px;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    color:#7a726f;
+    border:none;
+    border: 0.1px solid #7a726f;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+#view-wedding::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 100%;
+    background-color: #7a726f;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+#view-wedding::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 00%;
+    left:-100%;
+    background-color: #7a726f;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+#view-wedding:hover{
+    color:white;
+}
+#view-wedding::before{
+    opacity:0.3;
+}
+#view-wedding::after{
+    transition-delay: 0.3s;
+}
+#view-wedding:hover::before {
+    left:0;
+}
+#view-wedding:hover::after{
+    left:0;
+}
+.bi{
+    overflow: visible;
+    stroke: white;
+    stroke-width: 0.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
